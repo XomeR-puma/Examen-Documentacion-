@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece el conjunto de caracteres utilizado en el documento -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista inicial para que el diseño sea responsive -->
+
+    <title>WorkShop</title>
+    <!-- Título del documento que aparece en la pestaña del navegador -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!-- Preload para cargar de manera anticipada el archivo normalize.css y mejorar el rendimiento -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Enlace al archivo CSS normalize.css que ayuda a normalizar los estilos entre navegadores -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace a una fuente de Google Fonts -->
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Preload para cargar de manera anticipada el archivo styles.css y mejorar el rendimiento -->
+
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Enlace al archivo CSS principal styles.css -->
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Tienda Milanesa <span>" Tu tienda, tus básicos "</span></h1>
+        <!-- Encabezado principal de la página -->
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <!-- Menú de navegación principal -->
+            <a href="#">Inicio</a>
+            <a href="#">Tiendas</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Nos Ubicamos en <span></span></h2> 
+            <!-- Sección hero con información destacada -->
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <!-- SVG del icono de ubicación -->
+                <p>Villa Canales, Guatemala</p>
+                <!-- Ubicación física de la tienda -->
+            </div>
+            <a class="boton" href="#">Contactar</a>
+            <!-- Botón para contactar -->
+        </div> <!-- .contenido-hero --> 
+    </section>
+    
+    <main class="contenedor sombra">
+        <h2>Para la Cocina </h2>
+        <!-- Encabezado de la sección principal de productos -->
+
+        <div class="servicios">
+            <!-- Sección de productos destacados -->
+            <section class="servicio">
+                <h3>Sal de Cocina</h3>
+                <div class="iconos">
+                    <img src="https://acortar.link/2eUYNK" alt="Descripción de la imagen" width="300" height="200">
+                </div>
+                <p>Q.15.00</p>
+            </section>
+        
+            <section class="servicio">
+                <h3>Azucar</h3>
+                <div class="iconos">
+                    <img src="https://acortar.link/XM8GEv" alt="Descripción de la imagen" width="300" height="200">
+                </div>
+                <p>Q.20.00</p>
+            </section>
+
+            <section class="servicio">
+                <h3>Arroz</h3>
+                <div class="iconos">
+                    <img src="https://acortar.link/YBtqSz" alt="Descripción de la imagen" width="300" height="200">
+                </div>
+                <p>Q.10.00</p>
+            </section>
+        </div> <!--.servicios-->
+    
+        <section>
+            <h2>Contacto</h2>
+            <!-- Sección de contacto con formulario -->
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
+                    <!-- Título del formulario -->
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Tecnologico Federico Taylor 6to Bachillerato "B"</p>
+        <!-- Pie de página -->
+    </footer>
+</body>
+</html>
